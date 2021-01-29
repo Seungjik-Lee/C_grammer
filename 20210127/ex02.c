@@ -9,4 +9,24 @@
 ....
 */
 
+#include <stdio.h>
+
+int Square(int num, int result)
+{
+    if (num == 0)
+        return result;
+
+    result *= 2;
+    Square(num - 1, result);
+}
+
+int main(void)
+{
+    int x;
+
+    printf("정수 입력 : ");
+    scanf("%d", &x);
+
+    printf("2의 %d승은 %d \n", x, Square(x, 1));
+}
 
