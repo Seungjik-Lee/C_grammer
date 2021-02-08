@@ -9,7 +9,7 @@ void main()
     printf("&a = %d \n", &a);
     printf("vp = %d \n", vp);
 
-    *ip = (int*)vp;
+    ip = (int *)vp;
     *ip = 20;
 
     printf("*ip = %d \n", *ip);
