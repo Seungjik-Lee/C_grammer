@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
 
-// 
+// 스택 heap 영역 데이터 영역
 void main()
 {
     int a = 20;
@@ -23,4 +23,6 @@ void main()
 
     printf("amalloc[0] = %d \n", amalloc[0]);
     printf("amalloc[1] = %d \n", amalloc[1]);
+
+    free(amalloc);
 }
