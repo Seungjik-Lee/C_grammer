@@ -13,5 +13,5 @@ void main()
     *ip = 20;
 
     printf("*ip = %d \n", *ip);
-    printf("ip = %d \n". ip)
+    printf("ip = %d \n", ip)
 }
