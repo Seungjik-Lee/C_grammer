@@ -1,20 +1,27 @@
 #include <stdio.h>
 
-void BubbleSort(int ary[], int len);
+void DesSort(int ary[], int len);
 
 int main(void)
 {
-    int arr[4] = {3, 2, 4, 1};
+    int arr[7];
     int i;
 
-    BubbleSort(arr, sizeof(arr) / sizeof(int));
-    for (i = 0; i < 4; i++)
-        printf("%d",arr[i]);
+    for (i = 0; i < 7; i++)
+    {
+        printf("입력 : ");
+        scanf("%d", &arr[i]);
+    }
 
+    DesSort(arr, sizeof(arr) / sizeof(int));
     printf("\n");
+    for (i = 0; i < 7; i++)
+    {
+        printf("%d ", arr[i]);
+    }
 }
 
-void BubbleSort(int ary[], int len)
+void DesSort(int ary[], int len)
 {
     int i, j;
     int temp;
