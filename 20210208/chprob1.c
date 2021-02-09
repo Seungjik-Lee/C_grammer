@@ -21,7 +21,7 @@ void main()
         printf("\n");
         for (int j = 0; j < 4; j++)
         {
-            printf("%d ", arr[3 - j][i]);
+            printf("%-3d ", arr[3 - j][i]);
         }
     }
 
@@ -33,7 +33,7 @@ void main()
         printf("\n");
         for (int j = 0; j < 4; j++)
         {
-            printf("%d ", arr[3 - i][3 - j]);
+            printf("%-3d ", arr[3 - i][3 - j]);
         }
     }
 
@@ -45,7 +45,7 @@ void main()
         printf("\n");
         for (int j = 0; j < 4; j++)
         {
-            printf("%d ", arr[j][3 - i]);
+            printf("%-3d ", arr[j][3 - i]);
         }
     }
 }
