@@ -8,14 +8,17 @@ typedef struct
 
 void main()
 {
-    Employee emp;
+    Employee emp[3];
 
-    printf("이름 입력 : ");
-    scanf("%s", emp.name);
+    for (int i = 0; i < sizeof(emp) / sizeof(Employee); i++)
+    {
+        printf("이름 입력 : ");
+        scanf("%s", emp[i].name);
 
-    printf("주민등록번호 입력 : ");
-    scanf("%s", emp.jumin);
+        printf("주민등록번호 입력 : ");
+        scanf("%s", emp[i].jumin);
 
-    printf("입력한 이름 : %s", emp.name);
-    printf("입력한 주민등록번호 : %s", emp.jumin);
+        printf("입력한 이름 : %s \n", emp[i].name);
+        printf("입력한 주민등록번호 : %s\n", emp[i].jumin);
+    }
 }
