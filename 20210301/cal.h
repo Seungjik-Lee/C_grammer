@@ -1,0 +1,1 @@
+int c_square(int x);
